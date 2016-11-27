@@ -17,6 +17,7 @@ train_size | test_size | score | training time
 
 
 #### Keras simple convolutional network on train reshaped (224, 224)
+Architecture:
 ```python
 Convolution2D(64, 3, 3, border_mode="same", activation="relu")
 axPooling2D(pool_size=(3, 3))
