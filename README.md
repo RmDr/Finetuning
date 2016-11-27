@@ -9,12 +9,11 @@ train_size | test_size | score | training time
 
 #### SVM(sklearm.svm.SVC) on features extracted with penult layer of pretrained VGG16 on ImageNet, train reshaped (224, 224)
 extracting time ~ 60 min
-sklearm.svm.SVC default params
 
-train_size | test_size | score | training time
------------- | ------------- | ------------- | ----------
-2000 | 500 |  |
-
+train_size | test_size | kernel |score | training time
+------------ | ------------- | ---------- | ------------- | ----------
+2000 | 500 | 0.01 | RBF | ~ 10 sec
+2000 | 500 | 0.70 | linear | ~ 10 sec
 
 #### Keras simple convolutional network on train reshaped (224, 224)
 Architecture:
