@@ -1,5 +1,5 @@
 # Finetuning results
-Data: train: 2500 birds RGB images (different sizes); target: 50 classes; scoring: categorical_accuracy.
+Data: train: 2500 birds RGB (and a bit gray) images (different sizes, min_size = (120, 140)); target: 50 classes; scoring: categorical_accuracy.
 ### SVM(sklearm.svm.SVC) on train reshaped (100, 100)
 
 train_size | test_size | kernel |score | training time
