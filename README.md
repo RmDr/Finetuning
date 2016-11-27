@@ -5,7 +5,7 @@ Data: train: 2500 birds RGB images (different sizes); target: 50 classes; scorin
 train_size | test_size | kernel |score | training time
 ------------ | ------------- | ---------- | ------------- | ----------
 2000 | 500 | RBF | < 0.02 | ~ 5-10 min
-2000 | 500 | linear | < 0.02 | ~ 5-10 min 18 39- 
+2000 | 500 | linear |  | ~ 5-10 min 18 39- 
 
 #### SVM(sklearm.svm.SVC) on features extracted with penult layer of pretrained VGG16 on ImageNet, train reshaped (224, 224)
 extracting time ~ 60 min
