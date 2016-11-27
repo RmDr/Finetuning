@@ -1,13 +1,13 @@
 # Finetuning results
 Data: train: 2500 birds RGB images (different sizes); target: 50 classes; scoring: categorical_accuracy.
-#### SVM(sklearm.svm.SVC) on train reshaped (100, 100)
+### SVM(sklearm.svm.SVC) on train reshaped (100, 100)
 
 train_size | test_size | kernel |score | training time
 ------------ | ------------- | ---------- | ------------- | ----------
 2000 | 500 | RBF | < 0.02 | ~ 5-10 min
 2000 | 500 | linear | 0.11 | ~ 10 min
 
-#### SVM(sklearm.svm.SVC) on features extracted with penult layer of pretrained VGG16 on ImageNet, train reshaped (224, 224)
+### SVM(sklearm.svm.SVC) on features extracted with penult layer of pretrained VGG16 on ImageNet, train reshaped (224, 224)
 extracting time ~ 60 min
 
 train_size | test_size | kernel |score | training time
@@ -20,7 +20,7 @@ train_size | test_size | kernel |score | training time
 250 | 2250 | linear | 0.42 | ~ 10 sec
 100 | 2400 | linear | 0.28 | ~ 10 sec
 
-#### Keras simple convolutional network on train reshaped (224, 224)
+### Keras simple convolutional network on train reshaped (224, 224)
 Architecture:
 ```python
 Convolution2D(64, 3, 3, border_mode="same", activation="relu")
@@ -39,7 +39,7 @@ train_size | test_size | score | training time
 
 Other architectures give the same result.
 
-#### Keras 2-dense-layers network on features extracted with penult layer of pretrained VGG16 on ImageNet, train reshaped (224, 224)
+### Keras 2-dense-layers network on features extracted with penult layer of pretrained VGG16 on ImageNet, train reshaped (224, 224)
 extracting time ~ 60 min
 nb_epoch=200, batch_size=60
 
