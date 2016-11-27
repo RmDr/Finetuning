@@ -12,8 +12,8 @@ extracting time ~ 60 min
 
 train_size | test_size | kernel |score | training time
 ------------ | ------------- | ---------- | ------------- | ----------
-2000 | 500 | 0.01 | RBF | ~ 10 sec
-2000 | 500 | 0.70 | linear | ~ 10 sec
+2000 | 500 | RBF | 0.01 | ~ 10 sec
+2000 | 500 | linear | 0.70 | ~ 10 sec
 
 #### Keras simple convolutional network on train reshaped (224, 224)
 Architecture:
