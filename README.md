@@ -1,5 +1,5 @@
 # Finetuning results
-Data: train: 2000 birds images (different sizes), target: 50 classes, test: 500 images.
+Data: train: 2500 birds images (different sizes), target: 50 classes.
 #### SVM(sklearm.svm.SVC) on train reshaped (100, 100)
 sklearm.svm.SVC default params
 
