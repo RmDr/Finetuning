@@ -1,18 +1,18 @@
 # Finetuning results
 Data: train: 2500 birds RGB images (different sizes); target: 50 classes; scoring: categorical_accuracy.
 #### SVM(sklearm.svm.SVC) on train reshaped (100, 100)
-sklearm.svm.SVC default params
 
-train_size | test_size | score | training time
------------- | ------------- | ------------- | ----------
-2000 | 500 | ~ 0.02 | ~ 5-10 min
+train_size | test_size | kernel |score | training time
+------------ | ------------- | ---------- | ------------- | ----------
+2000 | 500 | RBF | < 0.02 | ~ 5-10 min
+2000 | 500 | linear | < 0.02 | ~ 5-10 min 18 39- 
 
 #### SVM(sklearm.svm.SVC) on features extracted with penult layer of pretrained VGG16 on ImageNet, train reshaped (224, 224)
 extracting time ~ 60 min
 
 train_size | test_size | kernel |score | training time
 ------------ | ------------- | ---------- | ------------- | ----------
-2000 | 500 | RBF | 0.01 | ~ 10 sec
+2000 | 500 | RBF | < 0.02 | ~ 10 sec
 2250 | 250 | linear | 0.71 | ~ 10 sec
 2000 | 500 | linear | 0.70 | ~ 10 sec
 1000 | 1500 | linear | 0.61 | ~ 10 sec
