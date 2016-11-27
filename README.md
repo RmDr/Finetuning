@@ -24,7 +24,7 @@ train_size | test_size | kernel |score | training time
 Architecture:
 ```python
 Convolution2D(64, 3, 3, border_mode="same", activation="relu")
-axPooling2D(pool_size=(3, 3))
+MaxPooling2D(pool_size=(3, 3))
 Convolution2D(126, 3, 3, border_mode="same", activation="relu")
 MaxPooling2D(pool_size=(3, 3))
 Flatten()
