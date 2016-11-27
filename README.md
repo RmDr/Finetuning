@@ -32,20 +32,7 @@ train_size | test_size | score | training time
 ------------ | ------------- | ------------- | ----------
 2000 | 500 | ~ 0.02 | ~ 70 min
 
-
-#### Keras simple convolutional network on train reshaped (224, 224)
-```python
-Convolution2D(64, 3, 3, border_mode="same", activation="relu")
-MaxPooling2D(pool_size=(3, 3))
-Flatten()
-Dense(250, activation="relu")
-Dense(51, activation="softmax")
-```
-nb_epoch=10, batch_size=32
-
-train_size | test_size | score | training time
------------- | ------------- | ------------- | ----------
-2000 | 500 | ~ 0.02 | ~ 70 min
+Other architectures give the same result.
 
 #### Keras 2-dense-layers network on features extracted with penult layer of pretrained VGG16 on ImageNet, train reshaped (224, 224)
 extracting time ~ 60 min
