@@ -57,3 +57,11 @@ train_size | test_size | score | training time
 174  | 2326 | ~ 0.33 | < 2 min
 99  | 2401 | ~ 0.27 | < 2 min
 24 | 2476 | ~ 0.10 | < 2 min
+
+### Keras 2-dense-layers network on features extracted with penult layer of pretrained VGG16 on ImageNet, train reshaped (224, 224)
+
+10 most important features with RandomForestClassifier.
+
+train_size | test_size | score | training time
+------------ | ------------- | ------------- | ----------
+2000 | 500 | ~ 0.32 | < 1 min
